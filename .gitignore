@@ -1,0 +1,17 @@
+_site/
+_test_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+Gemfile.lock
+node_modules/
+.DS_Store
+dist/
+jekyll-*.log
+netlify-version-backup-*/
+.netlify/
+netlify.toml
+scripts/
+start-site.ps1
+SECURITY_REVIEW.md

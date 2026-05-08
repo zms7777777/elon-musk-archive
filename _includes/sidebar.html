@@ -1,0 +1,21 @@
+<aside class="sidebar">
+  <img class="profile-photo" src="{{ site.author.avatar }}" alt="Elon Musk portrait">
+  <h1>{{ site.author.name }}</h1>
+  <p class="role">{{ site.author.role }}</p>
+  <p>{{ site.author.bio }}</p>
+  <dl class="quick-facts">
+    <div>
+      <dt>Focus</dt>
+      <dd>Space, EV, AI, infrastructure</dd>
+    </div>
+    <div>
+      <dt>Mode</dt>
+      <dd>First principles, fast iteration</dd>
+    </div>
+    <div>
+      <dt>Site</dt>
+      <dd>Jekyll + GitHub Pages + Netlify</dd>
+    </div>
+  </dl>
+  <a class="button" href="{{ '/search/' | relative_url }}">Search archive</a>
+</aside>

@@ -1,0 +1,21 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <span class="brand-mark">EM</span>
+    <span>
+      <strong>{{ site.title }}</strong>
+      <small>{{ site.subtitle }}</small>
+    </span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>Menu</button>
+  <nav class="site-nav" data-nav>
+    {% for item in site.data.nav %}
+      {% if item.search %}
+        <button class="search-trigger" type="button" aria-label="Search" data-search-open>
+          <span aria-hidden="true">⌕</span>
+        </button>
+      {% else %}
+        <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</header>

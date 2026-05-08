@@ -1,0 +1,32 @@
+title: Elon Musk Archive
+subtitle: Public archive of teams, milestones, and operating principles
+description: "A GitHub Pages Jekyll archive inspired by academic people and year-archive layouts."
+url: ""
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+markdown: kramdown
+permalink: /:categories/:title/
+
+author:
+  name: Elon Musk
+  role: Entrepreneur, engineer, product architect
+  avatar: "https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg"
+  bio: "Public archive-style homepage covering education, companies, milestones, core operators, and operating rules."
+  location: "Global"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - dist
+  - scripts
+  - netlify-version-backup-*
+  - tests
+  - _test_site
+  - start-site.ps1
+  - jekyll-*.log
+  - netlify.toml
+  - SECURITY_REVIEW.md

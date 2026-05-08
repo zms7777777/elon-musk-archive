@@ -1,0 +1,17 @@
+principles:
+  - title: "First principles"
+    body: "Do not only copy how others work. Ask what physics, cost, time, and constraints actually allow."
+  - title: "Delete before optimizing"
+    body: "If a requirement, process, or part cannot explain why it must exist, try deleting it first."
+  - title: "Simplify before automation"
+    body: "Premature optimization can make the wrong process faster and more expensive."
+  - title: "Shorten feedback loops"
+    body: "Fast experiments, fast failures, and fast learning work better for complex engineering than perfect plans."
+  - title: "Automate last"
+    body: "Only automate after the process is necessary, simple, and stable."
+rules:
+  - "Every requirement must have an accountable owner, not a vague department."
+  - "Direct cross-level communication is encouraged when it speeds up truth flow."
+  - "Leaders should be close to bottlenecks: production lines, code, launch pads, or customer sites."
+  - "Meetings must support decisions; meetings without decisions should be reduced."
+  - "Safety, legality, and long-term mission value outrank short-term optics."

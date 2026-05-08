@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+gem "jekyll", "3.9.5"
+gem "base64", "~> 0.3"
+gem "bigdecimal", "4.0.1"
+gem "csv", "~> 3.3"
+gem "kramdown-parser-gfm", "~> 1.1"
+gem "tzinfo", "~> 2.0"
+gem "tzinfo-data", "~> 1.2025"
+gem "webrick", "~> 1.9"

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">xAI card artwork</title>
+  <desc id="desc">Minimal dark card representing artificial intelligence infrastructure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="925" cy="130" r="190" fill="#60a5fa" opacity=".18"/>
+  <circle cx="250" cy="540" r="230" fill="#93c5fd" opacity=".12"/>
+  <path d="M214 464 438 210h126L340 464H214Zm360 0L470 330l70-80 168 214H574Zm172 0V210h96v254h-96Zm148 0V210h92v254h-92Z" fill="#fff"/>
+  <text x="88" y="112" fill="#bfdbfe" font-family="Segoe UI, Arial, sans-serif" font-size="34" letter-spacing="6">ARTIFICIAL INTELLIGENCE</text>
+</svg>
