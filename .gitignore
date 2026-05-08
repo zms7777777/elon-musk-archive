@@ -9,6 +9,7 @@ node_modules/
 .DS_Store
 dist/
 jekyll-*.log
+localtunnel*.log
 netlify-version-backup-*/
 .netlify/
 netlify.toml
