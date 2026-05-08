@@ -23,8 +23,8 @@ Assert-Contains $homepage 'href="https://www.spacex.com/"' "Popular Topics shoul
 Assert-Contains $homepage 'href="https://www.tesla.com/"' "Popular Topics should link to official Tesla page."
 Assert-Contains $homepage 'href="https://neuralink.com/"' "Popular Topics should link to official Neuralink page."
 Assert-NotContains $homepage 'class="topic-pill" href="/search/" data-search-open' "Popular Topics should not open the search overlay."
-Assert-Contains $homepage 'src="/assets/img/xai-card.svg"' "Homepage should use local xAI image asset."
-Assert-Contains $homepage 'src="/assets/img/neuralink-card.svg"' "Homepage should use local Neuralink image asset."
+Assert-Contains $homepage 'assets/img/xai-card.svg' "Homepage should use local xAI image asset."
+Assert-Contains $homepage 'assets/img/neuralink-card.svg' "Homepage should use local Neuralink image asset."
 
 Assert-NotContains $searchJs 'index.slice(0, 6)' "Search overlay should not render default result text before a query."
 Assert-NotContains $searchJs 'Try SpaceX' "Search overlay should not show redundant helper result text."

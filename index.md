@@ -17,7 +17,8 @@ permalink: /
       <div class="carousel-frame">
         {% for photo in site.data.home.group_photos %}
           <figure class="carousel-slide{% if forloop.first %} is-active{% endif %}" data-carousel-slide>
-            <img src="{{ photo.image }}" alt="{{ photo.title }}">
+            {% assign photo_image = photo.image %}
+            <img src="{% if photo_image contains '://' %}{{ photo_image }}{% else %}{{ photo_image | relative_url }}{% endif %}" alt="{{ photo.title }}">
             <figcaption>
               <strong>{{ photo.title }}</strong>
               <span>{{ photo.caption }}</span>
@@ -52,7 +53,8 @@ permalink: /
   <div class="news-grid">
     {% for item in site.data.home.latest_news %}
       <article class="news-card">
-        <img src="{{ item.image }}" alt="{{ item.title }}">
+        {% assign news_image = item.image %}
+        <img src="{% if news_image contains '://' %}{{ news_image }}{% else %}{{ news_image | relative_url }}{% endif %}" alt="{{ item.title }}">
         <div>
           <h3>{{ item.title }}</h3>
           <p>{{ item.summary }}</p>
