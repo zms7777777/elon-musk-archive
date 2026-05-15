@@ -24,15 +24,23 @@ function Assert-NotContains($text, $needle, $message) {
 }
 
 Assert-Contains $homepage 'hero-carousel' "Homepage should place carousel under the title."
-Assert-Contains $homepage 'class="home-intro intro-columns"' "Homepage intro should use two-column layout."
+Assert-Contains $homepage 'hero-carousel-compact' "Homepage carousel should use compact centered sizing."
+Assert-Contains $homepage 'class="home-intro intro-single"' "Homepage intro should be merged into one larger paragraph."
 Assert-NotContains $homepage 'Explore our content by topic' "Popular Topics should be moved from homepage to Project page."
 Assert-Contains $homepage 'assets/img/xai-card.svg' "Homepage should use local xAI image asset."
 Assert-Contains $homepage 'assets/img/neuralink-card.svg' "Homepage should use local Neuralink image asset."
 
 Assert-Contains $project 'Reusable Spaceflight' "Project page should include moved project topics."
+Assert-Contains $project 'assets/img/project-ev-energy.svg' "Project page should use local EV image asset."
+Assert-Contains $project 'assets/img/project-infrastructure.svg' "Project page should use local infrastructure image asset."
 Assert-Contains $project 'Open official project source' "Project cards should link to official sources."
 Assert-Contains $collaborations 'Tesla' "Collaborations page should include Tesla section."
 Assert-Contains $collaborations 'SpaceX' "Collaborations page should include SpaceX section."
+Assert-Contains $collaborations 'X.com' "Collaborations page should include X.com section."
+Assert-Contains $collaborations 'class="shareholder-avatar"' "Collaborations should use shareholder avatar cards."
+Assert-Contains $collaborations 'The Vanguard Group' "Collaborations should include Tesla shareholder details."
+Assert-Contains $collaborations 'Founders Fund' "Collaborations should include SpaceX investor details."
+Assert-Contains $collaborations 'Larry Ellison' "Collaborations should include X.com investor details."
 Assert-Contains $news '<h1>News</h1>' "Posts menu should be renamed to News."
 
 Assert-NotContains $searchJs 'index.slice(0, 6)' "Search overlay should not render default result text before a query."

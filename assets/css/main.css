@@ -625,11 +625,31 @@ blockquote {
   max-width: 980px;
 }
 
+.hero-carousel-compact {
+  max-width: min(760px, 100%);
+}
+
 .intro-columns {
   align-items: start;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0 auto;
   max-width: 1120px;
+}
+
+.intro-single {
+  display: block;
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
+.intro-single p {
+  background: rgba(255, 255, 255, 0.72);
+  border-left: 4px solid var(--blue);
+  border-radius: 20px;
+  font-size: clamp(1.22rem, 2vw, 1.55rem);
+  line-height: 1.68;
+  margin: 0;
+  padding: 24px 28px;
 }
 
 .intro-columns .intro-copy {
@@ -818,29 +838,69 @@ blockquote {
   text-decoration: none;
 }
 
-.collaboration-list {
+.collaboration-list,
+.shareholder-list {
   display: grid;
   gap: 34px;
 }
 
-.collaboration-group h2 {
+.collaboration-group h2,
+.shareholder-group h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 300;
   margin: 0 0 10px;
 }
 
-.collaboration-grid {
+.collaboration-grid,
+.shareholder-grid {
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 18px;
 }
 
-.collaboration-grid article {
+.collaboration-grid article,
+.shareholder-card {
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 22px;
+}
+
+.shareholder-card {
+  align-items: start;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 92px 1fr;
+}
+
+.shareholder-avatar {
+  align-items: center;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #eef5ff, #fff7ed);
+  border: 1px solid #cfe0ff;
+  border-radius: 50%;
+  color: var(--blue);
+  display: inline-flex;
+  font-size: 1.15rem;
+  font-weight: 900;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  width: 92px;
+}
+
+.shareholder-body h3 {
+  color: var(--blue);
+  font-size: 1.45rem;
+  margin: 4px 0 8px;
+}
+
+.stake-line {
+  border-left: 3px solid var(--orange);
+  color: var(--ink);
+  margin: 12px 0;
+  padding-left: 12px;
 }
 
 @media (max-width: 900px) {
@@ -878,6 +938,8 @@ blockquote {
   .dialog-profile,
   .project-grid,
   .collaboration-grid,
+  .shareholder-grid,
+  .shareholder-card,
   .principles,
   .timeline-item,
   .timeline-card,

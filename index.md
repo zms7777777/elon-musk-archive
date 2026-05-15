@@ -8,7 +8,7 @@ permalink: /
 <section class="home-hero">
   <h1>Neuralink Brain Interface Group</h1>
 
-  <div class="photo-carousel hero-carousel" data-carousel>
+  <div class="photo-carousel hero-carousel hero-carousel-compact" data-carousel>
     <div class="carousel-frame">
       {% for photo in site.data.home.group_photos %}
         <figure class="carousel-slide{% if forloop.first %} is-active{% endif %}" data-carousel-slide>
@@ -27,13 +27,8 @@ permalink: /
     </div>
   </div>
 
-  <div class="home-intro intro-columns">
-    <div class="intro-copy">
-      <p>The Neuralink Brain Interface Group focuses on computational methods for turning neural and biosignal data into useful measurements. Its work spans high-resolution brain recordings, real-time spike sorting, robotic kinematics, sensory feedback models, and clinically guided engineering.</p>
-    </div>
-    <div class="intro-copy">
-      <p>Led by Elon Musk, the group connects neurosurgery, computer science, electrical engineering, rehabilitation medicine, and AI. This archive highlights how interdisciplinary teams convert frontier ideas into testable systems and public milestones.</p>
-    </div>
+  <div class="home-intro intro-single">
+    <p>The Neuralink Brain Interface Group focuses on computational methods for turning neural and biosignal data into useful measurements, spanning high-resolution brain recordings, real-time spike sorting, robotic kinematics, sensory feedback models, and clinically guided engineering. Led by Elon Musk, this archive highlights how interdisciplinary teams connect neurosurgery, computer science, electrical engineering, rehabilitation medicine, and AI to convert frontier ideas into testable systems and public milestones.</p>
   </div>
 </section>
 
