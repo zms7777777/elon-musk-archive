@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Venture investors avatar">
+  <rect width="240" height="240" rx="120" fill="#fff7ed"/>
+  <circle cx="120" cy="120" r="94" fill="#ffffff" stroke="#d85f28" stroke-width="8"/>
+  <text x="120" y="136" text-anchor="middle" fill="#d85f28" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="800">VC</text>
+</svg>

@@ -887,7 +887,14 @@ blockquote {
   justify-content: center;
   letter-spacing: 0.04em;
   text-decoration: none;
+  overflow: hidden;
   width: 92px;
+}
+
+.shareholder-avatar img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .shareholder-body h3 {
