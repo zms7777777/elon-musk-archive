@@ -2,8 +2,12 @@
   url: /publications/
 - title: People
   url: /people/
-- title: Posts
-  url: /posts/
+- title: Project
+  url: /project/
+- title: Collaborations
+  url: /collaborations/
+- title: News
+  url: /news/
 - title: Teaching
   url: /teaching/
 - title: Search

@@ -70,6 +70,27 @@ document.addEventListener("DOMContentLoaded", () => {
     trigger.addEventListener("click", closeSearch);
   });
 
+  document.querySelectorAll("[data-person-open]").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const dialog = document.getElementById(trigger.dataset.personOpen);
+      if (dialog?.showModal) {
+        dialog.showModal();
+      }
+    });
+  });
+
+  document.querySelectorAll("[data-person-close]").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      trigger.closest("dialog")?.close();
+    });
+  });
+
+  document.querySelectorAll(".person-dialog").forEach((dialog) => {
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+  });
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeSearch();
   });

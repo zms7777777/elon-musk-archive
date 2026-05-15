@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Posts"
-description: "Life photos, setbacks, and self-encouragement across education and work."
-permalink: /posts/
+title: "News"
+description: "Archive-style updates, milestones, setbacks, and public learning moments."
+permalink: /news/
 ---
 
 <div class="timeline">
