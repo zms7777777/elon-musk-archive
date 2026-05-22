@@ -47,53 +47,16 @@ img {
   align-items: center;
   color: var(--ink);
   display: inline-flex;
-  gap: 14px;
+  flex: 0 0 auto;
   min-width: 0;
   text-decoration: none;
 }
 
 .brand-logo {
-  border-radius: 50%;
-  box-shadow: 0 10px 24px rgba(24, 35, 49, 0.14);
   display: block;
-  flex: 0 0 auto;
-  height: 54px;
-  overflow: hidden;
-  width: 54px;
-}
-
-.brand-logo-img {
-  height: 100%;
-  object-fit: cover;
-  object-position: 8% 50%;
-  transform: scale(3.2);
-  transform-origin: 12% 50%;
-  width: 100%;
-}
-
-.brand-copy {
-  display: block;
-  min-width: 0;
-}
-
-.brand strong {
-  background: linear-gradient(90deg, #08aeea 0%, #3317f2 28%, #f0068f 52%, #ff7a00 74%, #61c900 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display: block;
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: 0.01em;
-  line-height: 1.05;
-}
-
-.brand small {
-  color: #000;
-  display: block;
-  font-size: 0.72rem;
-  line-height: 1.2;
-  margin-top: 3px;
+  height: auto;
+  max-width: 140px;
+  width: min(140px, 34vw);
 }
 
 .site-nav {
@@ -153,6 +116,7 @@ img {
   line-height: 0.92;
   margin: 0 0 42px;
   max-width: none;
+  text-align: center;
   width: 100%;
 }
 
@@ -963,16 +927,8 @@ blockquote {
   }
 
   .brand-logo {
-    height: 46px;
-    width: 46px;
-  }
-
-  .brand strong {
-    font-size: 0.95rem;
-  }
-
-  .brand small {
-    font-size: 0.66rem;
+    max-width: 118px;
+    width: 32vw;
   }
 
   .home-intro,
