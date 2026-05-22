@@ -25,6 +25,11 @@ function Assert-NotContains($text, $needle, $message) {
 }
 
 Assert-Contains $homepage 'hero-carousel' "Homepage should place carousel under the title."
+Assert-Contains $homepage 'Fan Lab' "Header and homepage should use Fan Lab branding."
+Assert-Contains $homepage 'facilitators and neural image lab' "Header should use corrected Fan Lab subtitle."
+Assert-Contains $homepage 'assets/img/fan-lab-logo-edited.png' "Header should reference Fan Lab logo asset."
+Assert-Contains $homepage '<h1>Fan Lab</h1>' "Homepage hero title should be Fan Lab."
+Assert-NotContains $homepage 'Elon Musk Archive' "Old header title should not appear on the homepage."
 Assert-Contains $homepage 'hero-carousel-compact' "Homepage carousel should use compact centered sizing."
 Assert-Contains $homepage 'class="home-intro intro-single"' "Homepage intro should be merged into one larger paragraph."
 Assert-Contains $mainCss 'text-align: center;' "Homepage intro text should be centered."

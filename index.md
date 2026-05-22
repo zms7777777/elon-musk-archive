@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Neuralink Brain Interface Group"
+title: "Fan Lab"
 description: "A concise academic-style archive about Elon Musk's teams, milestones, and operating rules."
 permalink: /
 ---
 
 <section class="home-hero">
-  <h1>Neuralink Brain Interface Group</h1>
+  <h1>Fan Lab</h1>
 
   <div class="photo-carousel hero-carousel hero-carousel-compact" data-carousel>
     <div class="carousel-frame">
