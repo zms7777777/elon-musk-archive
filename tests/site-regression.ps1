@@ -10,6 +10,7 @@ $collaborations = Get-Content "_test_site/collaborations/index.html" -Raw
 $news = Get-Content "_test_site/news/index.html" -Raw
 $searchJs = Get-Content "_test_site/assets/js/search.js" -Raw
 $searchIndex = Get-Content "_test_site/assets/js/search-index.js" -Raw
+$mainCss = Get-Content "assets/css/main.css" -Raw
 
 function Assert-Contains($text, $needle, $message) {
   if (-not $text.Contains($needle)) {
@@ -26,6 +27,10 @@ function Assert-NotContains($text, $needle, $message) {
 Assert-Contains $homepage 'hero-carousel' "Homepage should place carousel under the title."
 Assert-Contains $homepage 'hero-carousel-compact' "Homepage carousel should use compact centered sizing."
 Assert-Contains $homepage 'class="home-intro intro-single"' "Homepage intro should be merged into one larger paragraph."
+Assert-Contains $mainCss 'text-align: center;' "Homepage intro text should be centered."
+Assert-NotContains $mainCss 'border-left: 4px solid var(--blue);
+  border-radius: 20px;
+  font-size: clamp(1.22rem, 2vw, 1.55rem);' "Homepage intro should not have a blue left border."
 Assert-NotContains $homepage 'Explore our content by topic' "Popular Topics should be moved from homepage to Project page."
 Assert-Contains $homepage 'assets/img/xai-card.svg' "Homepage should use local xAI image asset."
 Assert-Contains $homepage 'assets/img/neuralink-card.svg' "Homepage should use local Neuralink image asset."

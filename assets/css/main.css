@@ -644,12 +644,12 @@ blockquote {
 
 .intro-single p {
   background: rgba(255, 255, 255, 0.72);
-  border-left: 4px solid var(--blue);
   border-radius: 20px;
   font-size: clamp(1.22rem, 2vw, 1.55rem);
   line-height: 1.68;
   margin: 0;
   padding: 24px 28px;
+  text-align: center;
 }
 
 .intro-columns .intro-copy {

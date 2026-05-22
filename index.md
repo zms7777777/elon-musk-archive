@@ -22,8 +22,8 @@ permalink: /
       {% endfor %}
     </div>
     <div class="carousel-controls">
-      <button type="button" data-carousel-prev aria-label="Previous group photo">‹</button>
-      <button type="button" data-carousel-next aria-label="Next group photo">›</button>
+      <button type="button" data-carousel-prev aria-label="Previous group photo">&lsaquo;</button>
+      <button type="button" data-carousel-next aria-label="Next group photo">&rsaquo;</button>
     </div>
   </div>
 
