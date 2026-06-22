@@ -27,13 +27,14 @@ function Assert-NotContains($text, $needle, $message) {
 Assert-Contains $homepage 'hero-carousel' "Homepage should place carousel under the title."
 Assert-Contains $homepage 'Fan Lab' "Header and homepage should use Fan Lab branding."
 Assert-Contains $homepage 'alt="Fan Lab logo: facilitators and neural image lab"' "Header should expose accurate accessible logo text."
-Assert-Contains $homepage 'assets/img/fan-lab-logo-rgb.png' "Header should reference the versioned RGB Fan Lab logo asset."
+Assert-Contains $homepage 'assets/img/fan-lab-logo-rgb-v2.png' "Header should reference the latest versioned RGB Fan Lab logo asset."
+Assert-NotContains $homepage 'assets/img/fan-lab-logo-rgb.png' "Homepage should not reference the previous cached logo asset."
 Assert-NotContains $homepage 'assets/img/fan-lab-logo-site-bg.png' "Header should not reference the cached previous logo asset."
 Assert-NotContains $homepage 'assets/img/fan-lab-logo-edited.png' "Header should not use the white-background source logo."
 Assert-NotContains $homepage 'href="/elon-musk-archive/teaching/"' "Desktop and mobile navigation should not include Teaching."
 Assert-NotContains $homepage '>Teaching</a>' "Desktop and mobile navigation should not render a Teaching tab."
-if (-not (Test-Path "_test_site/assets/img/fan-lab-logo-rgb.png")) {
-  throw "Built site should include the versioned RGB Fan Lab logo asset."
+if (-not (Test-Path "_test_site/assets/img/fan-lab-logo-rgb-v2.png")) {
+  throw "Built site should include the latest versioned RGB Fan Lab logo asset."
 }
 Assert-Contains $homepage '<h1>Fan Lab</h1>' "Homepage hero title should be Fan Lab."
 Assert-NotContains $homepage 'Elon Musk Archive' "Old header title should not appear on the homepage."
