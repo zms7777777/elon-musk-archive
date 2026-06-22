@@ -8,8 +8,6 @@
   url: /collaborations/
 - title: News
   url: /news/
-- title: Teaching
-  url: /teaching/
 - title: Search
   url: "#search"
   search: true
