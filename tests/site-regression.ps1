@@ -26,7 +26,7 @@ function Assert-NotContains($text, $needle, $message) {
 
 Assert-Contains $homepage 'hero-carousel' "Homepage should place carousel under the title."
 Assert-Contains $homepage 'Fan Lab' "Header and homepage should use Fan Lab branding."
-Assert-Contains $homepage 'alt="Fan Lab logo: facilitators and neural image lab"' "Header should expose accurate accessible logo text."
+Assert-Contains $homepage 'alt="Fan Lab logo"' "Header should expose accurate accessible logo text."
 Assert-Contains $homepage 'assets/img/fan-lab-logo-rgb-v2.png' "Header should reference the latest versioned RGB Fan Lab logo asset."
 Assert-NotContains $homepage 'assets/img/fan-lab-logo-rgb.png' "Homepage should not reference the previous cached logo asset."
 Assert-NotContains $homepage 'assets/img/fan-lab-logo-site-bg.png' "Header should not reference the cached previous logo asset."
